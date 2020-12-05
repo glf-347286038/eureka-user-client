@@ -1,0 +1,12 @@
+server:
+  port: 1001
+#对外的项目名,为方便记忆就和项目名一致
+spring:
+  application:
+    name: eureka-user-client
+#将此服务注册到注册中心，地址填写注册中心服务端中的地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+
